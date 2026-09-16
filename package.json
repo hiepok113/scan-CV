@@ -1,0 +1,11 @@
+{
+  "name": "cv-jd-matcher",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=web\" \"npm run dev --workspace=api\"",
+    "build": "npm run build --workspaces",
+    "start": "npm run start --workspace=api"
+  },
+  "workspaces": ["apps/*"],
+  "devDependencies": { "concurrently": "^9.1.2" }
+}
